@@ -26,6 +26,7 @@ export default function DashboardLayout({ sidebar, children }: { sidebar: { titl
                 <header className="flex items-center justify-between mb-6 bg-white/60 dark:bg-slate-900/50 rounded-xl border border-slate-200/60 dark:border-slate-800/60 px-4 py-3 shadow-sm">
                     <div className="flex items-center gap-3 text-slate-500">
                         <Home size={18} /> <span>Dashboard</span>
+                        <Link to="/" className="ml-3 underline text-xs" title="Chart">Chart</Link>
                     </div>
                     <div className="flex items-center gap-4 text-slate-500">
                         <Link to={role === 'ADMIN' ? '/admin/users-vendors' : '/user/home'} title="Users" aria-label="Users" className="hover:text-brand">
