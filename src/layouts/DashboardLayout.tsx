@@ -7,7 +7,7 @@ export default function DashboardLayout({ sidebar, children }: { sidebar: { titl
     return (
         <div className="min-h-screen grid grid-cols-1 md:grid-cols-[260px_1fr]">
             <aside className="md:sticky md:top-0 h-full border-r border-slate-200/70 dark:border-slate-800/70 p-4 space-y-4 bg-white/70 dark:bg-slate-900/60 backdrop-blur">
-                <Link to="/" className="font-bold text-lg inline-flex items-center gap-2 text-brand"><Shield size={18} /> Axciom</Link>
+                <Link to="/" className="font-bold text-lg inline-flex items-center gap-2 text-brand"><Shield size={18} /> Acxiom</Link>
                 <div className="text-xs uppercase text-slate-500">{sidebar.title}</div>
                 <nav className="flex flex-col gap-1">
                     {sidebar.links.map(link => (
